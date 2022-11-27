@@ -3,7 +3,7 @@ import "./Footer.css";
 
 import { FaFacebookF } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
-import { IoLogoTwitter } from "react-icons/io";
+import { FiGithub } from "react-icons/fi";
 
 const Footer = () => {
   return (
@@ -37,14 +37,14 @@ const Footer = () => {
       </ul>
 
       <div className="footer__socials">
-        <a href="https://facebook.com">
+        <a href="https://www.facebook.com/botirjonshokir/">
           <FaFacebookF />
         </a>
-        <a href="https://instagram.com">
+        <a href="https://www.instagram.com/_botirjonshokirov_/">
           <FiInstagram />
         </a>
-        <a href="https://twitter.com">
-          <IoLogoTwitter />
+        <a href="https://github.com/botirjonshokirov">
+          <FiGithub />
         </a>
       </div>
 

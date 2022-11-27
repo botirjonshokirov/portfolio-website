@@ -22,24 +22,22 @@ const About = () => {
             <article className="about__card">
               <FaAward className="about__icon" />
               <h5>Experience</h5>
-              <small>3+ Years Working</small>
+              <small>1+ Years Working</small>
             </article>
             <article className="about__card">
               <FiUsers className="about__icon" />
               <h5>Clients</h5>
-              <small>200+ Worldwide</small>
+              <small>WellBee and WorldFires</small>
             </article>
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
               <h5>Projects</h5>
-              <small>80+ Completed</small>
+              <small>15+ Completed</small>
             </article>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-            laboriosam ipsam praesentium amet neque! Quos veritatis,
-            reprehenderit sit incidunt optio odit debitis dolorum modi
-            recusandae quaerat eius nesciunt ullam dicta?
+            From 2022-September, I am working with WellBee medical
+            service(Wellbee.pl)
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk
