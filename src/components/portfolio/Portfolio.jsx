@@ -1,54 +1,62 @@
 import React from "react";
 import "./Portfolio.css";
-import IMG1 from "../../assets/portfolio1.jpg";
-import IMG2 from "../../assets/portfolio2.jpg";
-import IMG3 from "../../assets/portfolio3.jpg";
-import IMG4 from "../../assets/portfolio4.jpg";
-import IMG5 from "../../assets/portfolio5.png";
-import IMG6 from "../../assets/portfolio6.jpg";
+import IMG1 from "../../assets/blogsite.png";
+import IMG2 from "../../assets/e-commerce-1.png";
+import IMG3 from "../../assets/furniture-commerce.png";
+import IMG4 from "../../assets/guess-number.png";
+import IMG5 from "../../assets/hamburger.png";
+import IMG6 from "../../assets/pig-game.png";
+import IMG7 from "../../assets/youtube-clone.png";
 
 const data = [
   {
     id: 1,
     image: IMG1,
-    title: "Crypto Currency Dashboard & Financial Visualization",
-    github: "https://github.com",
-    demo: "https://gitlab.com",
+    title: "Simple Blog Site with HTML+CSS and JavaScript",
+    github: "https://github.com/botirjonshokirov/blog-site",
+    demo: "https://blog-site-amber.vercel.app/",
   },
   {
     id: 2,
     image: IMG2,
-    title: "Charts templates & infographics in Figma",
-    github: "https://github.com",
-    demo: "https://gitlab.com",
+    title: "E-Commerce shop with JavaScript and HTML+CSS",
+    github: "https://github.com/botirjonshokirov/e-commerce-shop",
+    demo: "https://e-commerce-shop-seven.vercel.app/",
   },
   {
     id: 3,
     image: IMG3,
-    title: "Figma dashboard UI kit for data design web apps",
-    github: "https://github.com",
-    demo: "https://gitlab.com",
+    title: "Fully Responsive Furniture E-commerce shop with React",
+    github: "https://github.com/botirjonshokirov/furniture-ecommerce",
+    demo: "https://furniture-ecommerce-seven.vercel.app/home",
   },
   {
     id: 4,
     image: IMG4,
-    title: "Maintaing tasks and tracking progress",
-    github: "https://github.com",
-    demo: "https://gitlab.com",
+    title: "Simple Guess Number Game for FUN :)",
+    github: "https://github.com/botirjonshokirov/guess-number",
+    demo: "https://guess-number-flame.vercel.app/",
   },
   {
     id: 5,
     image: IMG5,
-    title: "Charts templates & infographics in Figma",
-    github: "https://github.com",
-    demo: "https://gitlab.com",
+    title: "Let's calculate how much it will be a custom Hamburger",
+    github: "https://github.com/botirjonshokirov/hamburger",
+    demo: "https://hamburger-xi.vercel.app/",
   },
   {
     id: 6,
     image: IMG6,
-    title: "Charts templates & infographics in Figma",
-    github: "https://github.com",
-    demo: "https://gitlab.com",
+    title: "Have a fun with your Friends",
+    github: "https://github.com/botirjonshokirov/pigGame",
+    demo: "https://pig-game-virid-rho.vercel.app/",
+  },
+  {
+    id: 7,
+    image: IMG7,
+    title: "YouTube Clone",
+    github: "https://github.com/botirjonshokirov/udemyapp",
+    demo: "https://udemyapp.vercel.app/",
   },
 ];
 
@@ -67,10 +75,20 @@ const Portfolio = () => {
               </div>
               <h3>{title}</h3>
               <div className="portfolio__item-cta">
-                <a href={github} className="btn" target="_blank">
+                <a
+                  href={github}
+                  className="btn"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Github
                 </a>
-                <a href={demo} className="btn btn-primary" target="_blank">
+                <a
+                  href={demo}
+                  className="btn btn-primary"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Live Demo
                 </a>
               </div>
