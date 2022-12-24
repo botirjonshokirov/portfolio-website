@@ -1,10 +1,10 @@
 import React from "react";
 import "./Testimonials.css";
 
-import AVTR1 from "../../assets/avatar1.jpg";
-import AVTR2 from "../../assets/avatar2.jpg";
-import AVTR3 from "../../assets/avatar3.jpg";
-import AVTR4 from "../../assets/avatar4.jpg";
+import AVTR1 from "../../assets/azamat.jpeg";
+import AVTR2 from "../../assets/durdona.jpeg";
+import AVTR3 from "../../assets/ikboljon.jpeg";
+import AVTR4 from "../../assets/jack.jpeg";
 
 // import Swiper core and required modules
 import { Navigation, Pagination } from "swiper";
@@ -19,25 +19,24 @@ import "swiper/css/pagination";
 const data = [
   {
     avatar: AVTR1,
-    name: "Tina Snow",
+    name: "Azamat Shokirov",
     review:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi repudiandae earum molestiae numquam magni. Modi eaque eveniet impedit reprehenderit pariatur eum accusamus mollitia veniam inventore, voluptate distinctio delectus. Labore, quas!",
+      "It was amazing working with you, Botirjon. I really appreciate your creativity and dedication.  Without your help i couldn't accomplish this work properly.  I really want to work with you again. Thanks",
   },
   {
     avatar: AVTR2,
-    name: "Shata Wale",
+    name: "Durdona Rashidova",
     review:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi repudiandae earum molestiae numquam magni. Modi eaque eveniet impedit reprehenderit pariatur eum accusamus mollitia veniam inventore, voluptate distinctio delectus. Labore, quas!",
+      "Я довольна результатом и программой созданной им. Он за короткое время  качественно выполнил мой заказ, связанный с  созданием сайта. Всё  необходимое работает отлично и в полной исправности,  при возникновении вопросов обращаюсь к нему и получаю ответы. Я удовлетворена работой программиста 10/10",
   },
   {
     avatar: AVTR3,
-    name: "Kwame Despite",
-    review:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi repudiandae earum molestiae numquam magni. Modi eaque eveniet impedit reprehenderit pariatur eum accusamus mollitia veniam inventore, voluptate distinctio delectus. Labore, quas!",
+    name: "Ikboljon Abdurasulov",
+    review: "Really appreciate, good luck, man!",
   },
   {
     avatar: AVTR4,
-    name: "Nana Ama McBrown",
+    name: "Jack Oliwer",
     review:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi repudiandae earum molestiae numquam magni. Modi eaque eveniet impedit reprehenderit pariatur eum accusamus mollitia veniam inventore, voluptate distinctio delectus. Labore, quas!",
   },

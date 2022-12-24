@@ -27,7 +27,7 @@ const About = () => {
             <article className="about__card">
               <FiUsers className="about__icon" />
               <h5>Clients</h5>
-              <small>WellBee and WorldFires</small>
+              <small>WellBee</small>
             </article>
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
@@ -35,10 +35,7 @@ const About = () => {
               <small>15+ Completed</small>
             </article>
           </div>
-          <p>
-            From 2022-September, I am working with WellBee medical
-            service(Wellbee.pl)
-          </p>
+          <p>From 2022-September, I am working with WellBee medical service</p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk
           </a>

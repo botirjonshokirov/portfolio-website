@@ -4,6 +4,7 @@ import "./Footer.css";
 import { FaFacebookF } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
 import { FiGithub } from "react-icons/fi";
+import { IoLogoTwitter } from "react-icons/io";
 
 const Footer = () => {
   return (
@@ -43,13 +44,12 @@ const Footer = () => {
         <a href="https://www.instagram.com/_botirjonshokirov_/">
           <FiInstagram />
         </a>
-<<<<<<< changing-the-content
+
         <a href="https://github.com/botirjonshokirov">
           <FiGithub />
-=======
+        </a>
         <a href="https://twitter.com/BotirjonShokir2">
           <IoLogoTwitter />
->>>>>>> main
         </a>
       </div>
 
