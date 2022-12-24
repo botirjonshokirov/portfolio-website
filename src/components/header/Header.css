@@ -50,6 +50,19 @@ header {
   border-radius: 12rem 12rem 0 0;
   overflow: hidden;
   padding: 1rem 1.5rem 1.5rem 1.5rem;
+  animation: profile__animate 8s ease-in-out infinite 1s;
+}
+
+@keyframes profile__animate {
+  0% {
+    border-radius: 80% 50% 35% 75%/70% 35% 75% 50%;
+  }
+  50% {
+    border-radius: 70% 40% 55% 60%/40% 50% 50% 70%;
+  }
+  100% {
+    border-radius: 80% 50% 35% 75%/70% 35% 75% 50%;
+  }
 }
 
 /*  ===========   SCROLL DOWN  ============  */
