@@ -3,8 +3,8 @@ import "./Testimonials.css";
 
 import AVTR1 from "../../assets/azamat.jpeg";
 import AVTR2 from "../../assets/durdona.jpeg";
-import AVTR3 from "../../assets/avatar3.jpg";
-import AVTR4 from "../../assets/avatar4.jpg";
+import AVTR3 from "../../assets/ikboljon.jpeg";
+import AVTR4 from "../../assets/jack.jpeg";
 
 // import Swiper core and required modules
 import { Navigation, Pagination } from "swiper";
@@ -31,13 +31,12 @@ const data = [
   },
   {
     avatar: AVTR3,
-    name: "Kwame Despite",
-    review:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi repudiandae earum molestiae numquam magni. Modi eaque eveniet impedit reprehenderit pariatur eum accusamus mollitia veniam inventore, voluptate distinctio delectus. Labore, quas!",
+    name: "Ikboljon Abdurasulov",
+    review: "Really appreciate, good luck, man!",
   },
   {
     avatar: AVTR4,
-    name: "Nana Ama McBrown",
+    name: "Jack Oliwer",
     review:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi repudiandae earum molestiae numquam magni. Modi eaque eveniet impedit reprehenderit pariatur eum accusamus mollitia veniam inventore, voluptate distinctio delectus. Labore, quas!",
   },
