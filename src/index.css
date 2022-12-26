@@ -126,7 +126,7 @@ a:hover {
   gap: 0.5rem;
 }
 .lang-btns p {
-  width: max-content;
+  width: 70px;
   display: inline-block;
   color: var(--color-primary);
   padding: 0.75rem 1.2rem;
