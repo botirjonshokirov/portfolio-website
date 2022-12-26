@@ -121,7 +121,7 @@ a:hover {
   top: 50px;
   right: 20%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   flex-direction: row;
   gap: 0.5rem;
 }
@@ -172,5 +172,8 @@ img {
 
   section > h2 {
     margin-bottom: 2rem;
+  }
+  .lang-btns {
+    right: 10px;
   }
 }

@@ -3,6 +3,32 @@
   gap: 12%;
 }
 
+.star-rating {
+  width: max-content;
+  display: block;
+  display: flex;
+  padding: 5px 10px;
+  gap: 0.8rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 2px solid var(--color-primary-variant);
+  resize: none;
+  color: var(--color-white);
+}
+
+.star-rating button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.on {
+  color: #000;
+}
+.off {
+  color: #ccc;
+}
+
 /*  ============================== FORM =====================  */
 
 form {
@@ -36,7 +62,7 @@ textarea {
   margin: 10% auto; /* 15% from the top and centered */
   padding: 20px;
   border-radius: 5%;
-  width: 500px;
+  width: 600px;
   height: 100%;
 }
 
@@ -58,6 +84,13 @@ textarea {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
+  .modal {
+    top: 10%;
+    left: 26%;
+  }
+  .modal-content {
+    width: 400px;
+  }
 }
 
 /* ================= MEDIA QUERIES (SMALL DEVICES) ================ */
@@ -65,8 +98,11 @@ textarea {
   .container.contact__containerform {
     width: var(--container-width-sm);
   }
-
   .modal {
+    top: 5%;
     left: 5%;
+  }
+  .modal-content {
+    width: 350px;
   }
 }

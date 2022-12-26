@@ -78,7 +78,10 @@ const Testimonials = () => {
           );
         })}
         <button className="btn btn-primary" onClick={() => setOpenModal(true)}>
-          Modal
+          <FormattedMessage
+            id="opinion-btn"
+            defaultMessage="Leave Your Opinion"
+          />
         </button>
       </Swiper>
       <Modal open={openModal} onClose={() => setOpenModal(false)} />

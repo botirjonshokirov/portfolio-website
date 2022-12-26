@@ -10,7 +10,7 @@ export default {
         children: [
           {
             type: 0,
-            value: "Hammaga Salom",
+            value: "Hammaga Salom, Men",
           },
         ],
         type: 8,
@@ -202,5 +202,8 @@ export default {
     "portfolio-btn": "Portfolio",
     "testimonials-btn": "Fikrlar",
     "contact-btn": "Aloqa",
+    "opinion-btn": "Fikr Bildirish",
+    "star-rating": "Baho: ",
+    "close-btn": "Chiqish",
   },
 };

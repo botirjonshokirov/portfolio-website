@@ -202,5 +202,8 @@ export default {
     "portfolio-btn": "Портфолио",
     "testimonials-btn": "Отзывы",
     "contact-btn": "Свяжитесь со мной",
+    "opinion-btn": "Оставьте свое мнение",
+    "star-rating": "Звездный рейтинг: ",
+    "close-btn": "Закрывать",
   },
 };
