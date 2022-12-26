@@ -116,6 +116,37 @@ a:hover {
   color: var(--color-bg);
 }
 
+.lang-btns {
+  position: relative;
+  top: 50px;
+  right: 20%;
+  display: flex;
+  justify-content: end;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.lang-btns p {
+  width: max-content;
+  display: inline-block;
+  color: var(--color-primary);
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  transition: var(--transition);
+}
+.lang-btns p:hover {
+  background: var(--color-white);
+  color: var(--color-bg);
+  border-color: transparent;
+}
+
+.lang-btns p.active {
+  background: var(--color-white);
+  color: var(--color-bg);
+  border-color: transparent;
+}
+
 img {
   display: block;
   width: 100%;
