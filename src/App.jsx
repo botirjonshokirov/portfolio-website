@@ -13,15 +13,19 @@ import {
 } from "./components/index";
 
 import { I18Provider, LOCALES } from "./i18n";
-import translate from "./i18n/messages/translate";
 
 const App = () => {
   const [locale, setLocale] = useState(LOCALES.ENGLISH);
   return (
     <>
-      <I18Provider locale={LOCALES.ENGLISH}>
+      <I18Provider locale={locale}>
         {/* <FormattedMessage id="hello" /> */}
         <Header />
+        <button onClick={() => setLocale(LOCALES.ENGLISH)}>EN</button>
+        <br />
+        <button onClick={() => setLocale(LOCALES.RUSSIAN)}>RU</button>
+        <br />
+        <button onClick={() => setLocale(LOCALES.UZBEK)}>UZ</button>
         <Nav />
         <About />
         <Experience />
