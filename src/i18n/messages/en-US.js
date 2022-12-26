@@ -201,5 +201,8 @@ export default {
     "portfolio-btn": "Portfolio",
     "testimonials-btn": "Testimonials",
     "contact-btn": "Contact",
+    "opinion-btn": "Leave Your Opinion",
+    "star-rating": "Star rating: ",
+    "close-btn": "Close",
   },
 };
