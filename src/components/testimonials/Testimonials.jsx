@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Testimonials.css";
 
 import AVTR1 from "../../assets/azamat.jpeg";
@@ -15,6 +15,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Modal from "../modal/Modal";
 
 const data = [
   {
@@ -43,6 +44,7 @@ const data = [
 ];
 
 const Testimonials = () => {
+  const [openModal, setOpenModal] = useState(false);
   return (
     <section id="testimonials">
       <h5>Review from clients</h5>
@@ -67,7 +69,11 @@ const Testimonials = () => {
             </SwiperSlide>
           );
         })}
+        <button className="btn btn-primary" onClick={() => setOpenModal(true)}>
+          Modal
+        </button>
       </Swiper>
+      <Modal open={openModal} onClose={() => setOpenModal(false)} />
     </section>
   );
 };
