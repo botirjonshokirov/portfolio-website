@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Testimonials.css";
+import { FormattedMessage } from "react-intl";
 
 import AVTR1 from "../../assets/azamat.jpeg";
 import AVTR2 from "../../assets/durdona.jpeg";
@@ -47,8 +48,15 @@ const Testimonials = () => {
   const [openModal, setOpenModal] = useState(false);
   return (
     <section id="testimonials">
-      <h5>Review from clients</h5>
-      <h2>Testimonials</h2>
+      <FormattedMessage
+        id="about-testimonials"
+        defaultMessage="<h5>Review from clients</h5>
+      <h2>Testimonials</h2>"
+        values={{
+          h5: (chunks) => <h5>{chunks}</h5>,
+          h2: (chunks) => <h2>{chunks}</h2>,
+        }}
+      />
 
       <Swiper
         className="container testimonials__container"
