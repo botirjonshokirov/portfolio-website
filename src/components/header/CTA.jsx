@@ -9,6 +9,7 @@ import Popper from "@mui/material/Popper";
 import MenuItem from "@mui/material/MenuItem";
 import MenuList from "@mui/material/MenuList";
 import CV from "../../assets/cv.pdf";
+import { FormattedMessage } from "react-intl";
 
 const CTA = () => {
   const options = ["Russian", "English", "Uzbek"];
@@ -39,10 +40,10 @@ const CTA = () => {
   return (
     <div className="cta">
       <a href={CV} download className="btn">
-        Download CV
+        <FormattedMessage id="download-cv" defaultMessage="Download CV" />
       </a>
       <a href="#contact" className="btn btn-primary">
-        Let's Talk
+        <FormattedMessage id="lets-talk" defaultMessage="Let's Talk" />
       </a>
 
       <React.Fragment>

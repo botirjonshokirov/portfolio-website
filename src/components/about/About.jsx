@@ -29,23 +29,49 @@ const About = () => {
           <div className="about__cards">
             <article className="about__card">
               <FaAward className="about__icon" />
-              <h5>Experience</h5>
-              <small>1+ Years Working</small>
+              <h5>
+                <FormattedMessage id="experience" defaultMessage="Experience" />
+              </h5>
+              <small>
+                <FormattedMessage
+                  id="experience-content"
+                  defaultMessage="1+ Years Working"
+                />
+              </small>
             </article>
             <article className="about__card">
               <FiUsers className="about__icon" />
-              <h5>Clients</h5>
-              <small>WellBee</small>
+              <h5>
+                <FormattedMessage id="clients" defaultMessage="Clients" />
+              </h5>
+              <small>
+                <FormattedMessage
+                  id="clients-content"
+                  defaultMessage="WellBee"
+                />
+              </small>
             </article>
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
-              <h5>Projects</h5>
-              <small>15+ Completed</small>
+              <h5>
+                <FormattedMessage id="projects" defaultMessage="Projects" />
+              </h5>
+              <small>
+                <FormattedMessage
+                  id="projects-content"
+                  defaultMessage="15+ Completed"
+                />
+              </small>
             </article>
           </div>
-          <p>From 2022-September, I am working with WellBee medical service</p>
+          <p>
+            <FormattedMessage
+              id="current-work"
+              defaultMessage="Currently I am working at RadCode.co Company"
+            />
+          </p>
           <a href="#contact" className="btn btn-primary">
-            Let's Talk
+            <FormattedMessage id="lets-talk" defaultMessage="Let's Talk" />
           </a>
         </div>
       </div>

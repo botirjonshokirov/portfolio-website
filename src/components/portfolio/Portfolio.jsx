@@ -1,4 +1,5 @@
 import React from "react";
+import { FormattedMessage } from "react-intl";
 import "./Portfolio.css";
 import IMG1 from "../../assets/blogsite.png";
 import IMG2 from "../../assets/e-commerce-1.png";
@@ -63,8 +64,15 @@ const data = [
 const Portfolio = () => {
   return (
     <section id="portfolio">
-      <h5>My Recent Work</h5>
-      <h2>Portfolio</h2>
+      <FormattedMessage
+        id="about-portfolio"
+        defaultMessage="<h5>My Recent Works</h5>
+      <h2>Portfolio</h2>"
+        values={{
+          h5: (chunks) => <h5>{chunks}</h5>,
+          h2: (chunks) => <h2>{chunks}</h2>,
+        }}
+      />
 
       <div className="container portfolio__container">
         {data.map(({ id, image, title, github, demo }) => {
