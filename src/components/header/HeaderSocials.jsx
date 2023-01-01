@@ -2,6 +2,8 @@ import React from "react";
 import { FiGithub } from "react-icons/fi";
 import { IoLogoTwitter } from "react-icons/io";
 import { FiInstagram } from "react-icons/fi";
+import { FaTelegram } from "react-icons/fa";
+import { BsLinkedin } from "react-icons/bs";
 
 const HeaderSocials = () => {
   return (
@@ -18,6 +20,12 @@ const HeaderSocials = () => {
       </a>
       <a href="https://www.instagram.com/_botirjonshokirov_/">
         <FiInstagram />
+      </a>
+      <a href="https://t.me/botirjons_me">
+        <FaTelegram />
+      </a>
+      <a href="https://www.linkedin.com/in/botirjon-shokirov-681aa3213/">
+        <BsLinkedin />
       </a>
     </div>
   );

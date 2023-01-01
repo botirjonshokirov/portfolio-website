@@ -5,6 +5,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
 import { FiGithub } from "react-icons/fi";
 import { IoLogoTwitter } from "react-icons/io";
+import { FaTelegram } from "react-icons/fa";
 import { FormattedMessage } from "react-intl";
 
 const Footer = () => {
@@ -68,6 +69,9 @@ const Footer = () => {
         </a>
         <a href="https://twitter.com/BotirjonShokir2">
           <IoLogoTwitter />
+        </a>
+        <a href="https://t.me/botirjons_me">
+          <FaTelegram />
         </a>
       </div>
 
