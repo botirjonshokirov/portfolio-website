@@ -11,66 +11,41 @@ const Nav = () => {
   const [activeNav, setActiveNav] = useState("#");
   return (
     <nav>
-      <div className="navigation">
-        <ul>
-          <li
-            onClick={() => setActiveNav("#")}
-            className={activeNav === "#" ? "active" : ""}
-          >
-            <a href="#">
-              <span className="icon">
-                <AiOutlineHome />
-              </span>
-              <span className="text">Home</span>
-            </a>
-          </li>
-          <li
-            onClick={() => setActiveNav("#about")}
-            className={activeNav === "#about" ? "active" : ""}
-          >
-            <a href="#about">
-              <span className="icon">
-                <AiOutlineUser />
-              </span>
-              <span className="text">About</span>
-            </a>
-          </li>
-          <li
-            onClick={() => setActiveNav("#experience")}
-            className={activeNav === "#experience" ? "active" : ""}
-          >
-            <a href="#experience">
-              <span className="icon">
-                <BiBook />
-              </span>
-              <span className="text">Experience</span>
-            </a>
-          </li>
-          <li
-            onClick={() => setActiveNav("#services")}
-            className={activeNav === "#services" ? "active" : ""}
-          >
-            <a href="#services">
-              <span className="icon">
-                <RiServiceLine />
-              </span>
-              <span className="text">Services</span>
-            </a>
-          </li>
-          <li
-            onClick={() => setActiveNav("#contact")}
-            className={activeNav === "#contact" ? "active" : ""}
-          >
-            <a href="#contact">
-              <span className="icon">
-                <BiMessageSquareDetail />
-              </span>
-              <span className="text">Contact</span>
-            </a>
-          </li>
-          <div className="indicator"></div>
-        </ul>
-      </div>
+      <a
+        href="#"
+        onClick={() => setActiveNav("#")}
+        className={activeNav === "#" ? "active" : ""}
+      >
+        <AiOutlineHome />
+      </a>
+      <a
+        href="#about"
+        onClick={() => setActiveNav("#about")}
+        className={activeNav === "#about" ? "active" : ""}
+      >
+        <AiOutlineUser />
+      </a>
+      <a
+        href="#experience"
+        onClick={() => setActiveNav("#experience")}
+        className={activeNav === "#experience" ? "active" : ""}
+      >
+        <BiBook />
+      </a>
+      <a
+        href="#services"
+        onClick={() => setActiveNav("#services")}
+        className={activeNav === "#services" ? "active" : ""}
+      >
+        <RiServiceLine />
+      </a>
+      <a
+        href="#contact"
+        onClick={() => setActiveNav("#contact")}
+        className={activeNav === "#contact" ? "active" : ""}
+      >
+        <BiMessageSquareDetail />
+      </a>
     </nav>
   );
 };

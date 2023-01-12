@@ -36,10 +36,35 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  background: var(--color-bg);
+  background: #000;
   color: var(--color-white);
   line-height: 1.7;
-  background-image: url(../src/assets/bg-texture.png);
+  width: 100%;
+  height: auto;
+}
+
+.container1 {
+  background-image: url(../src/assets/Hexagon.svg);
+  background-repeat: repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-size: 300px;
+  z-index: 1;
+}
+
+.bg {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 300px;
+  width: 300px;
+  background: linear-gradient(90deg, #335bf4 0%, #2ae9c9 100%);
+  filter: blur(20px);
+  z-index: 0;
 }
 
 /* ================= GENERAL STYLES ================ */
