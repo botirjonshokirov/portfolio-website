@@ -55,18 +55,6 @@ body {
   z-index: 1;
 }
 
-.bg {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 300px;
-  width: 300px;
-  background: linear-gradient(90deg, #335bf4 0%, #2ae9c9 100%);
-  filter: blur(20px);
-  z-index: 0;
-}
-
 /* ================= GENERAL STYLES ================ */
 
 .container {
@@ -115,6 +103,19 @@ a:hover {
 }
 
 .btn {
+  width: max-content;
+  display: inline-block;
+  color: var(--color-primary);
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  transition: var(--transition);
+}
+
+.modeIcon {
+  /* right: 10%; */
+  left: 70%;
   width: max-content;
   display: inline-block;
   color: var(--color-primary);
@@ -176,6 +177,20 @@ img {
   display: block;
   width: 100%;
   object-fit: cover;
+}
+
+@media screen and (min-width: 1024px) {
+  .bg {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    width: 300px;
+    background: linear-gradient(90deg, #335bf4 0%, #2ae9c9 100%);
+    filter: blur(20px);
+    z-index: 0;
+  }
 }
 
 /* ================= MEDIA QUERIES (MEDIUM DEVICES) ================ */

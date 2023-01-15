@@ -10,7 +10,9 @@ import {
   Testimonials,
   Contact,
   Footer,
+  Jokes,
 } from "./components/index";
+import { BsMoonStars, BsSun } from "react-icons/bs";
 
 import { I18Provider, LOCALES } from "./i18n";
 
@@ -23,9 +25,23 @@ const App = () => {
     bgRef.current.style.left = `${e.clientX}px`;
     bgRef.current.style.top = `${e.clientY}px`;
   };
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [modeIcon, setModeIcon] = useState(<BsSun />);
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+    if (isDarkMode === true) {
+      setModeIcon(<BsMoonStars />);
+    } else {
+      setModeIcon(<BsSun />);
+    }
+  };
   return (
     <>
-      <div className="container1" ref={rootRef} onMouseMove={handleMouseMove}>
+      <div
+        className={`container1 ${isDarkMode ? "dark-mode" : "light-mode"}`}
+        ref={rootRef}
+        onMouseMove={handleMouseMove}
+      >
         <I18Provider locale={locale}>
           <div className="lang-btns">
             <p
@@ -58,6 +74,9 @@ const App = () => {
               <Flag code="uzb" height="15" />
             </p>
           </div>
+          <p className="modeIcon" onClick={toggleDarkMode}>
+            {modeIcon}
+          </p>
           <Header />
           <Nav />
           <About />
@@ -66,6 +85,7 @@ const App = () => {
           <Portfolio />
           <Testimonials />
           <Contact />
+          <Jokes />
           <Footer />
         </I18Provider>
       </div>
