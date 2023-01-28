@@ -22,8 +22,8 @@ const App = () => {
   const rootRef = useRef(null);
   const bgRef = useRef(null);
   const handleMouseMove = (e) => {
-    bgRef.current.style.left = `${e.clientX}px`;
-    bgRef.current.style.top = `${e.clientY}px`;
+    bgRef.current.style.left = `${e.pageX}px`;
+    bgRef.current.style.top = `${e.pageY}px`;
   };
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [modeIcon, setModeIcon] = useState(<BsSun />);
