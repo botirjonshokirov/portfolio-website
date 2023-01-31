@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Testimonials.css";
-import { FormattedMessage } from "react-intl";
 
 import AVTR1 from "../../assets/azamat.jpeg";
 import AVTR2 from "../../assets/durdona.jpeg";
@@ -48,15 +47,8 @@ const Testimonials = () => {
   const [openModal, setOpenModal] = useState(false);
   return (
     <section id="testimonials">
-      <FormattedMessage
-        id="about-testimonials"
-        defaultMessage="<h5>Review from clients</h5>
-      <h2>Testimonials</h2>"
-        values={{
-          h5: (chunks) => <h5>{chunks}</h5>,
-          h2: (chunks) => <h2>{chunks}</h2>,
-        }}
-      />
+      <h5>Review from clients</h5>
+      <h2>Testimonials</h2>
 
       <Swiper
         className="container testimonials__container"
@@ -78,10 +70,7 @@ const Testimonials = () => {
           );
         })}
         <button className="btn btn-primary" onClick={() => setOpenModal(true)}>
-          <FormattedMessage
-            id="opinion-btn"
-            defaultMessage="Leave Your Opinion"
-          />
+          Leave Your Opinion
         </button>
       </Swiper>
       <Modal open={openModal} onClose={() => setOpenModal(false)} />
