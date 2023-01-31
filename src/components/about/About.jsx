@@ -22,7 +22,7 @@ const About = () => {
             <article className="about__card">
               <FaAward className="about__icon" />
               <h5>Experience</h5>
-              <small>1+ Years Working /></small>
+              <small>1+ Years Working</small>
             </article>
             <article className="about__card">
               <FiUsers className="about__icon" />
@@ -35,14 +35,14 @@ const About = () => {
               <small>15+ Completed</small>
             </article>
           </div>
-          <p>
+          <article className="about__me-content">
             I am a highly motivated Junior Web Developer with expertise in
             React, Node.js, HTML, CSS, and JavaScript. My passion for creating
             innovative digital solutions and strong problem-solving skills make
             me a valuable asset to any team. I am dedicated to continuing my
             learning and growth in the field, and making a positive impact with
             my work.
-          </p>
+          </article>
           <a href="#contact" className="btn btn-primary">
             Let's Talk
           </a>
