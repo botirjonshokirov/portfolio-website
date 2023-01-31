@@ -17,15 +17,51 @@ const Services = () => {
           <ul className="service__list">
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Working with HTML+CSS</p>
+              <p>HTML/CSS</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Working with JavaScript</p>
+              <p>JavaScript/jQuery</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Working with React.js</p>
+              <p>Responsive design</p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>Cross-browser compatibility</p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>Version control (Git)</p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>CSS preprocessors (Sass, Less)</p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>CSS frameworks (Bootstrap, Foundation)</p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>JavaScript frameworks/libraries (React, Angular, Vue.js)</p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>Basic server-side programming (Node.js, PHP)</p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>Command line interface (CLI)</p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>Basic SQL and database management (MySQL, MongoDB)</p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>RESTful APIs</p>
             </li>
           </ul>
         </article>
@@ -40,19 +76,47 @@ const Services = () => {
           <ul className="service__list">
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Creating WebSites(HTML+CSS/JavaScript/React + FireBase)</p>
+              <p>Website design and development</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Team Work(Slack for Remote)</p>
+              <p>Front-end development (HTML, CSS, JavaScript)</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>React Applications</p>
+              <p>Responsive design and cross-browser compatibility</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Git + GitLab</p>
+              <p>Content management system (CMS) customization</p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>Basic server-side programming (PHP, Node.js)</p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>E-commerce website development</p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>Landing page design and development</p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>Custom web application development</p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>Website maintenance and updates</p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>Website testing and debugging</p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>Basic SEO optimization</p>
             </li>
           </ul>
         </article>
@@ -64,19 +128,3 @@ const Services = () => {
 };
 
 export default Services;
-
-// HTML/CSS
-// JavaScript/jQuery
-// Responsive design
-// Cross-browser compatibility
-// Version control (Git)
-// CSS preprocessors (Sass, Less)
-// CSS frameworks (Bootstrap, Foundation)
-// JavaScript frameworks/libraries (React, Angular, Vue.js)
-// Basic server-side programming (Node.js, PHP)
-// Task runners/bundlers (Gulp, Webpack)
-// Command line interface (CLI)
-// Agile methodologies (Scrum, Kanban)
-// Basic SQL and database management (MySQL, MongoDB)
-// RESTful APIs
-// Mobile-first and accessibility (WCAG) considerations.
