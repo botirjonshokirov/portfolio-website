@@ -4,20 +4,12 @@ import ME from "../../assets/me-about.jpg";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
-import { FormattedMessage } from "react-intl";
 
 const About = () => {
   return (
     <section id="about">
-      <FormattedMessage
-        id="about-me"
-        defaultMessage="<h5>Get To Know</h5>
-      <h2>About Me</h2>"
-        values={{
-          h5: (chunks) => <h5>{chunks}</h5>,
-          h2: (chunks) => <h2>{chunks}</h2>,
-        }}
-      />
+      <h5>Get To Know</h5>
+      <h2>About Me</h2>
 
       <div className="container about__container">
         <div className="about__me">
@@ -29,49 +21,30 @@ const About = () => {
           <div className="about__cards">
             <article className="about__card">
               <FaAward className="about__icon" />
-              <h5>
-                <FormattedMessage id="experience" defaultMessage="Experience" />
-              </h5>
-              <small>
-                <FormattedMessage
-                  id="experience-content"
-                  defaultMessage="1+ Years Working"
-                />
-              </small>
+              <h5>Experience</h5>
+              <small>1+ Years Working /></small>
             </article>
             <article className="about__card">
               <FiUsers className="about__icon" />
-              <h5>
-                <FormattedMessage id="clients" defaultMessage="Clients" />
-              </h5>
-              <small>
-                <FormattedMessage
-                  id="clients-content"
-                  defaultMessage="WellBee"
-                />
-              </small>
+              <h5>Clients</h5>
+              <small>WellBee</small>
             </article>
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
-              <h5>
-                <FormattedMessage id="projects" defaultMessage="Projects" />
-              </h5>
-              <small>
-                <FormattedMessage
-                  id="projects-content"
-                  defaultMessage="15+ Completed"
-                />
-              </small>
+              <h5>Projects</h5>
+              <small>15+ Completed</small>
             </article>
           </div>
           <p>
-            <FormattedMessage
-              id="current-work"
-              defaultMessage="Currently I am working at RadCode.co Company"
-            />
+            I am a highly motivated Junior Web Developer with expertise in
+            React, Node.js, HTML, CSS, and JavaScript. My passion for creating
+            innovative digital solutions and strong problem-solving skills make
+            me a valuable asset to any team. I am dedicated to continuing my
+            learning and growth in the field, and making a positive impact with
+            my work.
           </p>
           <a href="#contact" className="btn btn-primary">
-            <FormattedMessage id="lets-talk" defaultMessage="Let's Talk" />
+            Let's Talk
           </a>
         </div>
       </div>

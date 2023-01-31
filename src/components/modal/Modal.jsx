@@ -1,11 +1,9 @@
 import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
-import { FormattedMessage, useIntl } from "react-intl";
 
 import "./Modal.css";
 
 const Modal = ({ open, onClose }) => {
-  const intl = useIntl();
   const [rating, setRating] = useState(0);
   const [hover, setHover] = useState(0);
   const form = useRef();
@@ -56,37 +54,18 @@ const Modal = ({ open, onClose }) => {
           <input
             type="text"
             name="name"
-            placeholder={intl.formatMessage({
-              id: "your-name",
-              defaultMessage: "Your Full Name",
-            })}
+            placeholder="Your Full Name"
             required
           />
-          <input
-            type="email"
-            name="email"
-            placeholder={intl.formatMessage({
-              id: "your-email",
-              defaultMessage: "Your Email",
-            })}
-            required
-          />
+          <input type="email" name="email" placeholder="Your Email" required />
           <textarea
             name="message"
             rows="7"
-            placeholder={intl.formatMessage({
-              id: "your-message",
-              defaultMessage: "Your Message",
-            })}
+            placeholder="Your Message"
             required
           ></textarea>
           <div className="star-rating">
-            <h4>
-              <FormattedMessage
-                id="star-rating"
-                defaultMessage="Star rating: "
-              />
-            </h4>
+            <h4>Star rating:</h4>
             {[...Array(5)].map((star, index) => {
               index += 1;
               return (
@@ -106,13 +85,10 @@ const Modal = ({ open, onClose }) => {
           </div>
           <div className="btns-content">
             <button onClick={onClose} className="btn btn-danger">
-              <FormattedMessage id="close-btn" defaultMessage="Close" />
+              Close
             </button>
             <button type="submit" className="btn btn-primary">
-              <FormattedMessage
-                id="send-message"
-                defaultMessage="Send a message"
-              />
+              Send a message
             </button>
           </div>
         </form>
