@@ -7,6 +7,7 @@ import IMG4 from "../../assets/guess-number.png";
 import IMG5 from "../../assets/hamburger.png";
 import IMG6 from "../../assets/pig-game.png";
 import IMG7 from "../../assets/youtube-clone.png";
+import IMG8 from "../../assets/openai.png";
 
 const data = [
   {
@@ -58,6 +59,13 @@ const data = [
     github: "https://github.com/botirjonshokirov/udemyapp",
     demo: "https://udemyapp.vercel.app/",
   },
+  {
+    id: 8,
+    image: IMG8,
+    title: "Image Generator. OpenAI",
+    github: "https://github.com/botirjonshokirov/image-generator",
+    demo: "https://image-generator-inky.vercel.app/",
+  },
 ];
 
 const Portfolio = () => {
@@ -67,34 +75,36 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        {data.map(({ id, image, title, github, demo }) => {
-          return (
-            <article key={id} className="portfolio__item">
-              <div className="portfolio__item-image">
-                <img src={image} alt={title} />
-              </div>
-              <h3>{title}</h3>
-              <div className="portfolio__item-cta">
-                <a
-                  href={github}
-                  className="btn"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Github
-                </a>
-                <a
-                  href={demo}
-                  className="btn btn-primary"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Live Demo
-                </a>
-              </div>
-            </article>
-          );
-        })}
+        {data
+          .map(({ id, image, title, github, demo }) => {
+            return (
+              <article key={id} className="portfolio__item">
+                <div className="portfolio__item-image">
+                  <img src={image} alt={title} />
+                </div>
+                <h3>{title}</h3>
+                <div className="portfolio__item-cta">
+                  <a
+                    href={github}
+                    className="btn"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Github
+                  </a>
+                  <a
+                    href={demo}
+                    className="btn btn-primary"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Live Demo
+                  </a>
+                </div>
+              </article>
+            );
+          })
+          .reverse()}
       </div>
     </section>
   );
