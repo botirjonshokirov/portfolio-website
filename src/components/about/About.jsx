@@ -25,11 +25,6 @@ const About = () => {
               <small>1+ Years Working</small>
             </article>
             <article className="about__card">
-              <FiUsers className="about__icon" />
-              <h5>Clients</h5>
-              <small>WellBee</small>
-            </article>
-            <article className="about__card">
               <VscFolderLibrary className="about__icon" />
               <h5>Projects</h5>
               <small>15+ Completed</small>
