@@ -35,8 +35,8 @@ const Contact = () => {
           <article className="contact__option">
             <RiMessengerLine className="contact__option-icon" />
             <h4>Telegram</h4>
-            <h5>https://t.me/shokirov_botirjon</h5>
-            <a href="https://t.me/Shokirov_Botirjon">Send a message</a>
+            <h5>https://t.me/botirjon_sh</h5>
+            <a href="https://t.me/botirjon_sh">Send a message</a>
           </article>
         </div>
         {/* END OF CONTACT OPTION */}

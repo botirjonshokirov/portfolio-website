@@ -35,12 +35,6 @@ const data = [
     name: "Ikboljon Abdurasulov",
     review: "Really appreciate, good luck, man!",
   },
-  {
-    avatar: AVTR4,
-    name: "Jack Oliwer",
-    review:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi repudiandae earum molestiae numquam magni. Modi eaque eveniet impedit reprehenderit pariatur eum accusamus mollitia veniam inventore, voluptate distinctio delectus. Labore, quas!",
-  },
 ];
 
 const Testimonials = () => {
